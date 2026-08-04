@@ -12,15 +12,15 @@
         }
 
         :root {
-            --phoenix-blue: #1e40af;
-            --phoenix-orange: #f97316;
-            --phoenix-dark: #0f172a;
-            --phoenix-light: #f8fafc;
-            --phoenix-gray: #64748b;
-            --phoenix-error: #ef4444;
-            --phoenix-success: #10b981;
-            --phoenix-shadow: 0 10px 25px rgba(30, 64, 175, 0.1);
-            --phoenix-shadow-lg: 0 20px 50px rgba(30, 64, 175, 0.15);
+            --ISRO-blue: #1e40af;
+            --ISRO-orange: #f97316;
+            --ISRO-dark: #0f172a;
+            --ISRO-light: #f8fafc;
+            --ISRO-gray: #64748b;
+            --ISRO-error: #ef4444;
+            --ISRO-success: #10b981;
+            --ISRO-shadow: 0 10px 25px rgba(30, 64, 175, 0.1);
+            --ISRO-shadow-lg: 0 20px 50px rgba(30, 64, 175, 0.15);
         }
 
         html {
@@ -30,22 +30,22 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
             background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
-            color: var(--phoenix-dark);
+            color: var(--ISRO-dark);
             line-height: 1.6;
         }
 
         /* ==================== HEADER ==================== */
 
-        .phoenix-header {
-            background: linear-gradient(135deg, var(--phoenix-blue) 0%, #1e3a8a 100%);
+        .ISRO-header {
+            background: linear-gradient(135deg, var(--ISRO-blue) 0%, #1e3a8a 100%);
             color: white;
             padding: 2.5rem 2rem;
-            box-shadow: var(--phoenix-shadow);
+            box-shadow: var(--ISRO-shadow);
             position: relative;
             overflow: hidden;
         }
 
-        .phoenix-header::before {
+        .ISRO-header::before {
             content: '';
             position: absolute;
             top: -50%;
@@ -70,7 +70,7 @@
             gap: 1.5rem;
         }
 
-        .phoenix-logo {
+        .ISRO-logo {
             width: 80px;
             height: 80px;
             display: flex;
@@ -83,7 +83,7 @@
             animation: float 3s ease-in-out infinite;
         }
 
-        .phoenix-logo svg {
+        .ISRO-logo svg {
             width: 60%;
             height: 60%;
             filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
@@ -109,7 +109,7 @@
 
         /* ==================== MAIN CONTENT ==================== */
 
-        .phoenix-main {
+        .ISRO-main {
             max-width: 1200px;
             margin: 0 auto;
             padding: 3rem 2rem;
@@ -119,7 +119,7 @@
         .form-container {
             background: white;
             border-radius: 20px;
-            box-shadow: var(--phoenix-shadow-lg);
+            box-shadow: var(--ISRO-shadow-lg);
             padding: 3rem;
             margin-bottom: 3rem;
             animation: slideUp 0.6s ease-out;
@@ -143,10 +143,10 @@
 
         .form-header h2 {
             font-size: 2.5rem;
-            color: var(--phoenix-dark);
+            color: var(--ISRO-dark);
             margin-bottom: 0.5rem;
             font-weight: 800;
-            background: linear-gradient(135deg, var(--phoenix-blue), var(--phoenix-orange));
+            background: linear-gradient(135deg, var(--ISRO-blue), var(--ISRO-orange));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -154,7 +154,7 @@
 
         .form-header p {
             font-size: 1.1rem;
-            color: var(--phoenix-gray);
+            color: var(--ISRO-gray);
         }
 
         /* ==================== FORM STYLES ==================== */
@@ -178,7 +178,7 @@
         .form-label {
             font-size: 0.95rem;
             font-weight: 600;
-            color: var(--phoenix-dark);
+            color: var(--ISRO-dark);
             margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
@@ -186,13 +186,13 @@
         }
 
         .required {
-            color: var(--phoenix-error);
+            color: var(--ISRO-error);
             font-size: 1.1em;
         }
 
         .optional {
             font-size: 0.85rem;
-            color: var(--phoenix-gray);
+            color: var(--ISRO-gray);
             font-weight: 400;
         }
 
@@ -205,19 +205,19 @@
             font-family: inherit;
             transition: all 0.3s ease;
             background-color: white;
-            color: var(--phoenix-dark);
+            color: var(--ISRO-dark);
         }
 
         .form-input:hover,
         select:hover {
-            border-color: var(--phoenix-blue);
+            border-color: var(--ISRO-blue);
             background-color: #f8fafc;
         }
 
         .form-input:focus,
         select:focus {
             outline: none;
-            border-color: var(--phoenix-blue);
+            border-color: var(--ISRO-blue);
             box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
             background-color: white;
         }
@@ -231,7 +231,7 @@
 
         .form-input.error,
         select.error {
-            border-color: var(--phoenix-error);
+            border-color: var(--ISRO-error);
             background-color: #fef2f2;
         }
 
@@ -241,7 +241,7 @@
         }
 
         .error-text {
-            color: var(--phoenix-error);
+            color: var(--ISRO-error);
             font-size: 0.85rem;
             margin-top: 0.35rem;
             display: flex;
@@ -258,9 +258,9 @@
             grid-column: 1 / -1;
             padding: 1rem 1.25rem;
             background-color: #fef2f2;
-            border-left: 4px solid var(--phoenix-error);
+            border-left: 4px solid var(--ISRO-error);
             border-radius: 8px;
-            color: var(--phoenix-error);
+            color: var(--ISRO-error);
             display: flex;
             align-items: center;
             gap: 0.75rem;
@@ -285,23 +285,23 @@
         }
 
         .file-upload-area:hover {
-            border-color: var(--phoenix-blue);
+            border-color: var(--ISRO-blue);
             background-color: #f0f9ff;
         }
 
         .file-upload-area.drag-over {
-            border-color: var(--phoenix-orange);
+            border-color: var(--ISRO-orange);
             background-color: #fff7ed;
             transform: scale(1.02);
         }
 
         .file-upload-area.error {
-            border-color: var(--phoenix-error);
+            border-color: var(--ISRO-error);
             background-color: #fef2f2;
         }
 
         .file-upload-area.has-file {
-            border-color: var(--phoenix-success);
+            border-color: var(--ISRO-success);
             background-color: #f0fdf4;
         }
 
@@ -321,35 +321,35 @@
         .upload-text {
             font-size: 1.1rem;
             font-weight: 600;
-            color: var(--phoenix-dark);
+            color: var(--ISRO-dark);
         }
 
         .upload-subtext {
-            color: var(--phoenix-gray);
+            color: var(--ISRO-gray);
             font-size: 0.9rem;
         }
 
         .upload-hint {
             font-size: 0.85rem;
-            color: var(--phoenix-gray);
+            color: var(--ISRO-gray);
             margin-top: 0.5rem;
         }
 
         .file-name {
             font-weight: 600;
-            color: var(--phoenix-blue);
+            color: var(--ISRO-blue);
             word-break: break-all;
         }
 
         .file-size {
             font-size: 0.9rem;
-            color: var(--phoenix-gray);
+            color: var(--ISRO-gray);
         }
 
         .browse-btn,
         .change-file-btn {
             padding: 0.75rem 1.5rem;
-            background: linear-gradient(135deg, var(--phoenix-blue), #1e3a8a);
+            background: linear-gradient(135deg, var(--ISRO-blue), #1e3a8a);
             color: white;
             border: none;
             border-radius: 8px;
@@ -376,7 +376,7 @@
         .submit-btn {
             grid-column: 1 / -1;
             padding: 1rem 2rem;
-            background: linear-gradient(135deg, var(--phoenix-blue), #1e3a8a);
+            background: linear-gradient(135deg, var(--ISRO-blue), #1e3a8a);
             color: white;
             border: none;
             border-radius: 10px;
@@ -422,7 +422,7 @@
             grid-column: 1 / -1;
             text-align: center;
             font-size: 0.9rem;
-            color: var(--phoenix-gray);
+            color: var(--ISRO-gray);
             margin-top: 1rem;
         }
 
@@ -442,7 +442,7 @@
         .success-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, var(--phoenix-success), #059669);
+            background: linear-gradient(135deg, var(--ISRO-success), #059669);
             color: white;
             border-radius: 50%;
             display: flex;
@@ -460,13 +460,13 @@
 
         .success-message h2 {
             font-size: 2rem;
-            color: var(--phoenix-dark);
+            color: var(--ISRO-dark);
             margin-bottom: 0.5rem;
         }
 
         .success-message > p {
             font-size: 1.1rem;
-            color: var(--phoenix-gray);
+            color: var(--ISRO-gray);
             margin-bottom: 2rem;
         }
 
@@ -495,12 +495,12 @@
 
         .detail-row .label {
             font-weight: 600;
-            color: var(--phoenix-dark);
+            color: var(--ISRO-dark);
             flex-shrink: 0;
         }
 
         .detail-row .value {
-            color: var(--phoenix-blue);
+            color: var(--ISRO-blue);
             font-family: 'Monaco', 'Courier New', monospace;
             font-size: 0.9rem;
             flex: 1;
@@ -510,7 +510,7 @@
 
         .copy-btn {
             padding: 0.4rem 0.8rem;
-            background: var(--phoenix-blue);
+            background: var(--ISRO-blue);
             color: white;
             border: none;
             border-radius: 6px;
@@ -526,7 +526,7 @@
         }
 
         .success-footer {
-            color: var(--phoenix-gray);
+            color: var(--ISRO-gray);
             font-size: 0.95rem;
             margin: 1.5rem 0;
         }
@@ -548,7 +548,7 @@
         .info-section h2 {
             text-align: center;
             font-size: 2rem;
-            color: var(--phoenix-dark);
+            color: var(--ISRO-dark);
             margin-bottom: 3rem;
             font-weight: 800;
         }
@@ -571,8 +571,8 @@
 
         .info-card:hover {
             transform: translateY(-5px);
-            box-shadow: var(--phoenix-shadow-lg);
-            border-color: var(--phoenix-blue);
+            box-shadow: var(--ISRO-shadow-lg);
+            border-color: var(--ISRO-blue);
         }
 
         .info-icon {
@@ -583,21 +583,21 @@
 
         .info-card h3 {
             font-size: 1.3rem;
-            color: var(--phoenix-dark);
+            color: var(--ISRO-dark);
             margin-bottom: 0.75rem;
             font-weight: 700;
         }
 
         .info-card p {
-            color: var(--phoenix-gray);
+            color: var(--ISRO-gray);
             font-size: 0.95rem;
             line-height: 1.6;
         }
 
         /* ==================== FOOTER ==================== */
 
-        .phoenix-footer {
-            background: var(--phoenix-dark);
+        .ISRO-footer {
+            background: var(--ISRO-dark);
             color: white;
             text-align: center;
             padding: 2rem;
@@ -605,20 +605,20 @@
             font-size: 0.9rem;
         }
 
-        .phoenix-footer a {
-            color: var(--phoenix-orange);
+        .ISRO-footer a {
+            color: var(--ISRO-orange);
             text-decoration: none;
             transition: color 0.2s ease;
         }
 
-        .phoenix-footer a:hover {
+        .ISRO-footer a:hover {
             text-decoration: underline;
         }
 
         /* ==================== RESPONSIVE DESIGN ==================== */
 
         @media (max-width: 768px) {
-            .phoenix-header {
+            .ISRO-header {
                 padding: 1.5rem 1rem;
             }
 
@@ -655,13 +655,13 @@
                 gap: 1.5rem;
             }
 
-            .phoenix-main {
+            .ISRO-main {
                 padding: 1.5rem 1rem;
             }
         }
 
         @media (max-width: 480px) {
-            .phoenix-header {
+            .ISRO-header {
                 padding: 1rem;
             }
 
@@ -708,7 +708,7 @@
         .form-input:focus-visible,
         select:focus-visible,
         button:focus-visible {
-            outline: 3px solid var(--phoenix-orange);
+            outline: 3px solid var(--ISRO-orange);
             outline-offset: 2px;
         }
 
@@ -718,7 +718,7 @@
                 border-width: 3px;
             }
 
-            .phoenix-header {
+            .ISRO-header {
                 text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
             }
         }
@@ -726,15 +726,15 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="phoenix-header">
+    <header class="ISRO-header">
         <div class="header-content">
             <div class="logo-section">
-                <div class="phoenix-logo">
+                <div class="ISRO-logo">
                     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                         <path d="M50 10 L85 90 L65 55 L80 85 L50 50 L20 85 L35 55 L15 90 Z" 
-                              fill="url(#phoenixGradient)" />
+                              fill="url(#ISROGradient)" />
                         <defs>
-                            <linearGradient id="phoenixGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <linearGradient id="ISROGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                                 <stop offset="0%" style="stop-color: #1e40af; stop-opacity: 1" />
                                 <stop offset="100%" style="stop-color: #f97316; stop-opacity: 1" />
                             </linearGradient>
@@ -749,7 +749,7 @@
         </div>
     </header>
 
-    <main class="phoenix-main">
+    <main class="ISRO-main">
         <div class="form-container">
             <!-- Success Message -->
             <div id="successMessage" class="success-message">
@@ -776,7 +776,7 @@
             <!-- Application Form -->
             <div id="formSection" class="form-section show">
                 <div class="form-header">
-                    <h2>Apply to Phoenix</h2>
+                    <h2>Apply to ISRO</h2>
                     <p>Showcase your potential and join us on our journey to excellence</p>
                 </div>
 
@@ -912,35 +912,31 @@
 
         <!-- Info Section -->
         <section class="info-section">
-            <h2>Why Join Phoenix?</h2>
+            <h2>Eligibility ?</h2>
             <div class="info-grid">
                 <div class="info-card">
-                    <div class="info-icon">🚀</div>
-                    <h3>Innovation</h3>
-                    <p>Be part of cutting-edge projects that shape the future</p>
+                    <h3>Min CGPA </h3>
+                    <p>A minimum CGPA of 6 out of a 10 grade point</p>
                 </div>
                 <div class="info-card">
-                    <div class="info-icon">👥</div>
-                    <h3>Culture</h3>
-                    <p>Work with talented, passionate, and collaborative teams</p>
+                    <h3>Semester </h3>
+                    <p>Must have completed 6 semesters out of a 8 semester course </p>
                 </div>
                 <div class="info-card">
-                    <div class="info-icon">📈</div>
-                    <h3>Growth</h3>
-                    <p>Continuous learning and career development opportunities</p>
+                    <h3>Up on completion</h3>
+                    <p>You would get a certificate upon completing your intership </p>
                 </div>
                 <div class="info-card">
-                    <div class="info-icon">⭐</div>
-                    <h3>Excellence</h3>
-                    <p>Strive for excellence in everything we do</p>
+                    <h3>Terms & Conditions</h3>
+                    <p>You wont be eligible for project trainees/In-plant trainees/Internship shall not be eligible for any stipend / remuneration / financial assistance. The project work/Internship/In-plant training will be carried out at SCC/MOX/IDSN, ISTRAC. </p>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="phoenix-footer">
-        <p>&copy; 2024 Phoenix. All rights reserved. | Privacy Policy | Terms of Service</p>
+    <footer class="ISRO-footer">
+        <p>&copy; 2024 ISRO. All rights reserved. | Privacy Policy | Terms of Service</p>
     </footer>
 
     <script>
